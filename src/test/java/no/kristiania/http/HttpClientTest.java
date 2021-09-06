@@ -8,7 +8,7 @@ public class HttpClientTest {
     @Test
     void shouldReciveStatus() {
         HttpClient client = new HttpClient("httpbin.org", 80, "/status/200");
-        assertEquals(200, client.getStatusCode());
+        assertEquals(400, client.getStatusCode());
     }
 
 
